@@ -1,12 +1,9 @@
-if [ -f /etc/bashrc  ]; then
-    . /etc/bashrc
-fi
- 
 alias v=vi
 alias e=evince
 alias p=python
 alias i=ipython
 
+export OMP_NUM_THREADS=1
 function parse_git_branch {
     ref=$(git symbolic-ref HEAD 2> /dev/null) || return
     echo "("${ref#refs/heads/}")"
