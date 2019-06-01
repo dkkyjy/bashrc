@@ -1,1 +1,1 @@
-# mybashrc
+# .bashrc
